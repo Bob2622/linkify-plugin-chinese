@@ -1,6 +1,6 @@
 {
   "name": "linkify-plugin-chinese",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "针对中文语境超链特殊格式处理",
   "main": "./dist/counter.umd.cjs",
   "scripts": {
