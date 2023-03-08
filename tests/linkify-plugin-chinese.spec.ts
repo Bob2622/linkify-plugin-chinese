@@ -1,6 +1,9 @@
 import {describe, expect, test} from '@jest/globals';
+import * as linkifyJs from 'linkifyjs';
 import linkifyHtml from 'linkify-html';
-import {UWORD_EXCLUDE_ZH, ZH} from '../src/index';
+import {ZH} from '../src/index';
+import registerChinesePlugin from '../src/index';
+registerChinesePlugin(linkifyJs);
 
 describe('linkify-plugin-chinese module', () => {
   test('chinese char regexp', () => {
