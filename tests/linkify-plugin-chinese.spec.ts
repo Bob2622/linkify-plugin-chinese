@@ -32,6 +32,7 @@ describe('linkify-plugin-chinese module', () => {
 
   test('中文和中文符号自动截断链接', () => {
     // 中文
+    expect(linkifyHtml('台a.com你好')).toBe(`台<a href=\"http://a.com\">a.com</a>你好`);
     expect(linkifyHtml('https://www.baidu.com?a=1你好')).toBe(`<a href=\"https://www.baidu.com?a=1\">https://www.baidu.com?a=1</a>你好`);
     expect(linkifyHtml('https://www.baidu.com?a=1，你好')).toBe(`<a href=\"https://www.baidu.com?a=1\">https://www.baidu.com?a=1</a>，你好`);
 
