@@ -1,8 +1,8 @@
 {
   "name": "linkify-plugin-chinese",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "针对中文语境超链特殊格式处理",
-  "main": "./dist/counter.umd.cjs",
+  "main": "./dist/linkify-plugin-chinese.umd.cjs",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
